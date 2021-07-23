@@ -16,7 +16,8 @@ html, body {
 body {
     font-family: "Nunito", sans-serif;
     text-align: center;
-    background: rgba(235, 235, 235, 0.9);
+    background: rgb(34,193,195);
+    
 }
 
 header {
@@ -123,6 +124,7 @@ header h1 {
 ======================================== */
 
 .modal-container {
+    display: none;
     position: fixed;
     top: 0;
     right: 0;
@@ -153,6 +155,11 @@ header h1 {
     background: rgba(0, 0, 0, 0.8);
     border-radius: 0.25em;
     border: 1px solid rgba(50, 50, 50, 0.3);
+    
+}
+.modal-close-btn:hover{
+    opacity: .6;
+    transition: .4s;
 }
 
 .modal-img {
@@ -255,5 +262,6 @@ header h1 {
     .btn:hover {
         background: rgba(255, 255, 255, 1);
         color: rgba(25, 25, 25, 1); 
+        opacity: .6;
     }
 }
