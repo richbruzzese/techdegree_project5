@@ -2,8 +2,8 @@
  Building an Employee Directory
 
 Employee Directory using Random User API.  Generates a random list of 12 employees.
-Clicking employee displays a modal with more information on the employee
-Function to toggle between employees enabled
+Clicking employee displays a modal with more information
+Previous and Next buttons allow user to cycle between employees
 
 Search function will display modal for the employee item.
 
