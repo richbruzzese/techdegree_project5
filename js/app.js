@@ -79,7 +79,8 @@ function createSearchBar(){
     const searchError = document.querySelector('#error')
 
     /**
- * Event listener for search bar.  Will display the modal for the matched search.
+ * Event listeners for search bar. Filters gallery elements based on string entered into search bar  
+ * On submit, will display the modal for the matched search.
  * If no match, display an error that employee not found
  */ 
     search.addEventListener('keyup', ()=>{
@@ -172,6 +173,7 @@ function displayModal(employee, index){
             <p class="modal-text"><b>Birthday</b>: ${date.getUTCMonth()}/${date.getUTCDate()}/${date.getUTCFullYear()}</p>
     `
     //Event Listeners for closing the modal, viewing previous, and viewing next
+    //Closing modal will refresh elements to display all
     modalCloseButton.addEventListener('click', () => {
         const search = document.querySelector('.search-container')
         modal.style.display = 'none'
@@ -192,7 +194,4 @@ function displayModal(employee, index){
             displayModal(employeeData.results[card], card)
         }
     })
-    
-
-
 }
